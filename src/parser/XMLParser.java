@@ -1,3 +1,4 @@
+package parser;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -35,7 +36,7 @@ public class XMLParser {
 					}
 					if(inputLine.contains("</")){
 						if(currentElement != null){
-							System.out.println("</"+currentElement.getName()+">");
+							//System.out.println("</"+currentElement.getName()+">");
 							currentElement = currentElement.getParent();
 						} else {
 							throw new XMLParserException(new CorruptedXMLSyntaxException(filename, "Closed tag on root element"));

@@ -1,3 +1,4 @@
+package parser;
 
 public class XMLParserException extends Exception{
 	

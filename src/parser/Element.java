@@ -1,7 +1,7 @@
+package parser;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import com.sun.xml.internal.ws.util.StringUtils;
 
 
 public class Element {
@@ -18,7 +18,7 @@ public class Element {
 		}
 		this.name = values[0];
 
-		System.out.println("<"+ this.name+">");
+		//System.out.println("<"+ this.name+">");
 		for(int i = 1; i<values.length; i++){
 			String line = values[i];
 
